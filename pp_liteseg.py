@@ -39,7 +39,7 @@ class PPLiteSeg(nn.Module):
                  arm_type='UAFM_SpAtten',
                  cm_bin_sizes=[1, 2, 4],
                  cm_out_ch=128,
-                 arm_out_chs=[64, 96, 128],
+                 arm_out_chs=[32, 64, 128], # [32, 64, 128] for STDCNet813; [64, 96, 128] for STDCNet1446
                  seg_head_inter_chs=[64, 64, 64],
                  resize_mode='bilinear',
                  pretrain_model=None,
